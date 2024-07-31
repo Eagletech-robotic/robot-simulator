@@ -2,16 +2,13 @@
     display: flex;
     justify-content: space-around;
     position: sticky;
-    top: 0;
+
+    padding: 0.75rem;
     z-index: 999;
-    padding: 0.5rem;
+    top: 0;
 
     background-color: white;
-}
-
-.container {
-    display: flex;
-    justify-content: space-around;
+    border-bottom: 2px solid var(--secondary-color);
 }
 
 .button {
@@ -28,8 +25,26 @@
     color: var(--secondary-color);
 }
 
+.button.link-out {
+    flex-direction: row;
+    align-items: baseline; /* For vertical alignment with the other buttons */
+    gap: 8px;
+}
+
 .active-bar {
     height: 4px;
     width: 110%;
     background-color: var(--main-color);
+
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.active-bar.visible {
+    opacity: 1;
+}
+
+.link-out-icon {
+    height: 1rem;
+    color: var(--secondary-color);
 }
