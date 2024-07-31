@@ -1,8 +1,8 @@
 import './Banner.css'
 
-export function Header() {
+export function Banner() {
     return (
-        <div className="header">
+        <div className="banner">
             <div className="title">EagleTech Robotics</div>
             <div className="logo_container">
                 <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="logo" />
