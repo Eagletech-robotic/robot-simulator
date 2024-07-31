@@ -1,8 +1,10 @@
 .header {
+    display: flex;
+    justify-content: space-around;
     position: sticky;
     top: 0;
     z-index: 999;
-    padding: 1rem;
+    padding: 0.5rem;
 
     background-color: white;
 }
@@ -13,10 +15,21 @@
 }
 
 .button {
-    padding: 0.75rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    font-size: 16px;
+    padding: 0.75rem 1.5rem;
+    gap: 2px;
+
+    font-size: 20px;
     font-weight: bold;
     text-decoration: none;
     color: var(--secondary-color);
+}
+
+.active-bar {
+    height: 4px;
+    width: 110%;
+    background-color: var(--main-color);
 }
